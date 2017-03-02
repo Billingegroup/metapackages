@@ -1,0 +1,29 @@
+package:
+  name: billingegroup-meta27
+  version: 0.1.0
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - python=2
+    - numpy
+    - scipy
+    - matplotlib
+    - diffpy-cmi
+    - seaborn
+    - fabio
+    - pims
+    - yaml
+
+about:
+  home: https://thebillingegroup.com/
+  license: MIT
+  summary: 'Metapackage for the Billinge Group'
+
+extra:
+  recipe-maintainers:
+    # GitHub IDs for maintainers of the recipe.
+    # Always check with the people listed below if they are OK becoming maintainers of the recipe. (There will be spam!)
+    - CJ-Wright
