@@ -1,21 +1,27 @@
+{% set name = "billingegroup-meta" %}
+{% set version = "0.1.0" %}
+{% set sha256 = "d58439c548433adcda98e695be53e526ba940a4b9c44fb9a05d92cd495cdd47f" %}
+
 package:
-  name: billingegroup-meta27
-  version: 0.1.0
+  name: {{ name|lower }}
+  version: {{ version }}
 
 build:
   number: 0
 
 requirements:
   run:
-    - python=2
+    - python
     - numpy
     - scipy
     - matplotlib
-    - diffpy-cmi
     - seaborn
     - fabio
     - pims
     - yaml
+    - pandas
+    - jupyter
+    - pyFAI  # [linux]
 
 about:
   home: https://thebillingegroup.com/
@@ -24,6 +30,7 @@ about:
 
 extra:
   recipe-maintainers:
-    # GitHub IDs for maintainers of the recipe.
-    # Always check with the people listed below if they are OK becoming maintainers of the recipe. (There will be spam!)
     - CJ-Wright
+    - chiahaoliu
+    - sbanerjee23
+    - sbillinge
